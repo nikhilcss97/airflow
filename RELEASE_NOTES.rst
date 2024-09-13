@@ -21,6 +21,30 @@
 
 .. towncrier release notes start
 
+Airflow 2.10.2 (2024-09-18)
+---------------------------
+
+No significant changes.
+
+Bug Fixes
+"""""""""
+- Revert "Fix: DAGs are not marked as stale if the dags folder change" (#42220, #42217)
+- Correct scheduled slots documentation and missing open telemetry span (#41985)
+
+Miscellaneous
+"""""""""""""
+- Limit universal-pathlib below ``0.2.4`` as it breaks our integration (#42101)
+- Autofix default deferrable with ``LibCST`` (#42089)
+- Deprecate ``--tree`` flag for ``tasks list`` cli command (#41965)
+
+Doc Only Changes
+""""""""""""""""
+- Update ``security_model.rst`` to clear unauthenticated endpoints exceptions (#42085)
+- Add note about dataclasses and attrs to XComs page (#42056)
+- Improve docs on markdown docs in DAGs (#42013)
+- Add warning that listeners can be dangerous (#41968)
+
+
 Airflow 2.10.1 (2024-09-05)
 ---------------------------
 
